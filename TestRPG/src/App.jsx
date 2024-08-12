@@ -33,6 +33,7 @@ function App() {
     setTime(0);
     setNumberFocus(0);
     setIsWin(false);
+    setIsLose(false);
 
     for (let i = 0; i < quantity; i++) {
       const { top, left } = shufflePositions();
