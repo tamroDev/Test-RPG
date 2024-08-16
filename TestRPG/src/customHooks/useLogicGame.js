@@ -36,7 +36,6 @@ const useLogicGame = () => {
         left,
         zIndex: quantity - i,
       };
-      //   spread operator
       setArrNumber((arrOld) => [...arrOld, number]);
     }
 
@@ -46,7 +45,6 @@ const useLogicGame = () => {
   const handleDelete = (id) => {
     if (id === numberFocus + 1) {
       setArrNumber((arrOld) => arrOld.filter((item) => item.id !== id));
-      // Nếu arrNumber.length trở thành 1, điều này có nghĩa là chỉ còn một số duy nhất trong mảng. Số này là số cuối cùng cần được nhấp.
       if (arrNumber.length === 1) {
         setIsWin(true);
         setStart(false);
